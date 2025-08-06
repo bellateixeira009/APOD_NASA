@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explorador de Astronomia</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="shortcut icon" href="favicon (2).png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Explorador de Astronomia</h1>
+
+    <label for="dataInput">Escolha uma data:</label>
+    <input type="date" id="dataInput" max="" />
+
+    <button id="btnBuscar">Buscar Imagem</button>
+
+    <div id="resultado" class="resultado">
+      <h2 id="tituloImg"></h2>
+      <img id="imagem" alt="Astronomy Picture" />
+      <p id="descricao"></p>
+      <a id="link" href="" target="_blank" rel="noopener">Ver no site da NASA</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
