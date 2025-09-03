@@ -19,6 +19,7 @@ async function buscarImagemAstronomia() {
   descricao.textContent = '';
   imagem.src = '';
   imagem.style.display = 'none';
+  link.style.display = 'none' // esconde
   link.href = '';
 
   const iframeExistente = document.querySelector('iframe');
@@ -39,6 +40,7 @@ async function buscarImagemAstronomia() {
       imagem.src = dados.url;
       imagem.alt = dados.title;
       imagem.style.display = 'block';
+      link.style.display = 'inline'; // se a url for valida, mostra o link
     } else if (dados.media_type === 'video') {
       const iframe = document.createElement('iframe');
       iframe.width = '100%';
